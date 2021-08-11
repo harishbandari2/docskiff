@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-4 border-right">
+      <div class="tag-container" #inputTag>
+        <div class="tag" *ngFor="let tag of tags;let i= index"><span>{{tag}}</span><i class="ico" (click)="removeTag(i)"></i></div>
+        <input  (keyup)="newTag($event)" />  
+      </div>  
+    </div>
+  </div>
+</div>
